@@ -1,0 +1,221 @@
+body{
+    background-color: #85c3ff;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #ff6187;
+    width: 100%;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.container {
+    background-color: #ff6187;
+    border-left: 6px solid green;
+    height: 1610px;
+    position: relative;
+    left: 10%;
+    margin-left: 0%;
+
+    top: 0;
+  }
+  .imga{
+      background-image: url(../images/web-dev-1.jpg);
+      padding: 150px;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+  }
+  .imga{
+    /* background-color: #ff6187;
+    border-left: 6px solid green;
+    height: 200px;
+    position: relative;
+    left: 10%;
+    margin-left: 0%;
+
+    top: 0; */
+  } 
+  .imga{
+      text-align: center;
+      font-size: 50px;
+
+  }
+  .hed{
+    text-align: center;
+    font-size: 70px;
+  }
+
+
+.container {
+    margin:0;
+    display: grid;
+    grid-template-columns:2fr 1fr ;
+    grid-auto-rows: 350px auto;
+    grid-gap:5px;
+     grid-template-areas: 
+    "a a a"
+    "b . c"
+    "d . e";
+}
+.item {
+    background-color:#ff6187 ;
+
+}
+.one{
+grid-area: a;
+background-image: url(https://themetrust.com/wp-content/uploads/2019/06/sweater-laptop-900x500.jpg); 
+background-repeat: no-repeat;
+background-position: center;
+background-size:100% ;
+padding-top: 250px;
+}
+
+.two{
+
+grid-area: b;
+margin-left: 58%;
+display: flex;
+}
+#two{
+    margin:auto;
+    width: 350px;
+    
+}
+.three{
+    
+grid-area: c;
+margin-right: 30%;
+display: flex;
+}
+#three{
+    margin:auto;
+    width: 350px;
+    
+}
+.four{
+  
+    grid-area: d;
+    margin-left: 350px;
+   
+    display: flex;
+    ;
+
+}
+#four{
+    margin-left:-25%;
+    width: 350px;
+  
+}
+.five{
+   
+    grid-area: e;
+    margin-right: 30%;
+    display: flex;
+
+}
+#five{
+    margin:auto;
+    width: 350px;
+}
+.containers{
+    
+    border-left: 6px solid green;
+    height: 350px;
+    position: relative;
+    left: 10%;
+    margin-left: 0%;
+
+    top: 0;
+}
+.containers{
+    
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-auto-rows: 350px auto;
+    grid-gap:20px;
+    grid-template-areas: 
+    "a a b"
+    /* "a a b"
+    "a a b"; */
+   
+}
+.pic{
+    background-color: none;
+}
+.six{
+    grid-area: a;
+    background-color: thistle;
+
+}
+body > div.containers > div.pic.six > p{
+    position:unset;
+}
+
+.seven{
+    grid-area: b;
+}
+#ted{
+    margin:auto;
+    width: 500px;
+}
+body > div.container > div.item.one > p{
+    font-size: 40px;
+}
+body > div.container > div.item.two > p{
+    font-size: 30px;
+    position: absolute;
+    
+}
+body > div.container > div.item.two > a > p{
+    font-size: 30px;
+    position: absolute;
+}
+body > div.container > div.item.three > p{
+    font-size: 30px;
+    position: absolute;
+}
+body > div.container > div.item.four > p{
+    font-size: 20px;
+}
+body > div.container > section > p{
+    font-size: 30px;
+}
+body > div.containers > div:nth-child(3) > p{
+    font-size: 30px;
+    position: absolute;
+   
+}
+@media (max-width: 690px) {
+    .btn {
+      font-size: 1rem;
+      margin: 16px 0px 0px 0px;
+      padding: 10px 15px;
+    }
+  
+    #password {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
